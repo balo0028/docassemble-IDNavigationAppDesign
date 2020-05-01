@@ -1,0 +1,13 @@
+  ## To be placed below "buttons"
+features:
+  css: IDNavigationColours.css
+  debug: True
+  hide standard menu: False
+---
+objects:
+  - OBlogo: DAStaticFile.using(filename='HuttStCentreLogo.jpeg')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + OBlogo.url_for() + '" style="height: 50px;">')
+---
